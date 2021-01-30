@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>EXPONENTIAL DIGI</title>
+    <style type="text/css">
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+.loader {
+    width: 10em;
+    height: 10em;
+    font-size: 25px;
+    box-sizing: border-box;
+    border-top: 0.3em solid hotpink;
+    border-radius: 50%;
+    position: relative;
+    animation: rotating 2s ease-in-out infinite;
+    --direction: 1;
+}
+
+.loader::before,
+.loader::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    box-sizing: border-box;
+    top: -0.2em;
+}
+
+.loader::before {
+    border-top: 0.3em solid dodgerblue;
+    transform: rotate(120deg);
+}
+
+.loader::after {
+    border-top: 0.3em solid gold;
+    transform: rotate(240deg);
+}
+
+.loader span {
+    position: absolute;
+    color: white;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    line-height: 10em;
+    font-family: sans-serif;
+    animation: rotating 2s linear infinite;
+    --direction: -1;
+}
+
+@keyframes rotating {
+    50% {
+        transform: rotate(calc(180deg * var(--direction)));
+    }
+
+    100% {
+        transform: rotate(calc(360deg * var(--direction)));
+    }
+}
+</style>
+
+    <!-- load CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                  <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="fontawesome/css/fontawesome-all.min.css">                <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>                       <!-- http://kenwheeler.github.io/slick/ -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/tooplate-style.css">                               <!-- Templatemo style -->
+
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this in a modern browser such as latest version of Chrome or Microsoft Edge.");</script>
+    
+</head>
+
+<body>
+<div class="loader">
+  <span>Loading...</span>
+</div>
+
+    <div id="tm-bg"></div>
+    <div id="tm-wrap">
+        <div class="tm-main-content">
+            <div class="container tm-site-header-container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-md-col-xl-6 mb-md-0 mb-sm-4 mb-4 tm-site-header-col">
+                        <div class="tm-site-header">
+                            <h1 class="mb-4">EXPONENTIAL DIGI</h1>
+                            <img src="img/underline.png" class="img-fluid mb-4">
+                            <p>Helping your business succeed online</p>
+                            <p>Everything you need to build and grow your business online, centralized on a simple platform.</p>        
+                        </div>                        
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="content">
+                            <div class="grid">
+                                <div class="grid__item" id="home-link">
+                                    <div class="product">
+                                        <div class="tm-nav-link">
+                                            <i class="fas fa-home fa-3x tm-nav-icon"></i>
+                                            <span class="tm-nav-text">Welcome</span>
+                                            <div class="product__bg"></div>        
+                                        </div>                                    
+                                        <div class="product__description">
+                                            <div class="row mb-3">
+                                                <div class="col-12">
+                                                    <h2 class="tm-page-title">Welcome to Exponential DIGI</h2>        
+                                                </div>
+                                            </div>                                        
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                    <img src="img/download.jpg" width=400 class="img-fluid mb-3">
+                                                    <p>We Attract your customers with a powerful web presence and online advertising. We provide you with a central platform that gives you an overview of everything related to your business online.</p>
+                                                    <p>We Promote your products and offers with engaging ads. You decide the ads budget.</p>    
+                                                </div>
+                                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                    <p>We Customize a professional website and webshop, then take your pick from a selection of marketing applications when you want to reach more customers.</p>
+                                                    <p>If you have any kind of question or comment, please feel free to contact us. You are welcome.</p>
+                                                    <img src="img/digetal-mark-fb.jpg" class="img-fluid">
+                                                </div>                                        
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__item" id="team-link">
+                                    <div class="product">
+                                        <div class="tm-nav-link">
+                                            <i class="fas fa-users fa-3x tm-nav-icon"></i>
+                                            <span class="tm-nav-text">Our Team</span>
+                                            <div class="product__bg"></div>            
+                                        </div>                                     
+                                        <div class="product__description">
+                                            <div class="p-sm-4 p-2">
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                        <h2 class="tm-page-title">Details of Our Team</h2>        
+                                                    </div>
+                                                </div>
+                                                <div class="row tm-reverse-sm">
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
+							                    <div class="team-item">
+							                        <div class="team-content">
+							                            <i><img src="img/WhatsApp Image 2020-09-12 at 1.03.23 AM.jpeg" alt=""></i>
+							                            <div class="user-image">
+
+							                            </div>
+							                            <div class="team-info">
+							                                <h3 class="user-name">Singh Sagar Sunil</h3>
+							                                <span>Founder</span>
+							                            </div>
+							                        </div>
+							                    </div>
+							                </div>
+							                 <!-- ***** Testimonials Item Start ***** -->
+								                <div class="col-lg-4 col-md-6 col-sm-12">
+								                    <div class="team-item">
+								                        <div class="team-content">
+								                            <i><img src="img/ayush.jpg" alt=""></i>
+								                            
+								                            <div class="user-image">
+								                              
+								                            </div>
+								                            <div class="team-info">
+								                                <h3 class="user-name">Ayush Singh</h3>
+								                                <span>Co-Founder</span>
+								                            </div>
+								                        </div>
+								                    </div>
+								                </div>
+								                <!-- ***** Testimonials Item End ***** -->
+								                 <!-- ***** Testimonials Item Start ***** -->
+							                <div class="col-lg-4 col-md-6 col-sm-12">
+							                    <div class="team-item">
+							                        <div class="team-content">
+							                            <i><img src="img/abhishek (1).PNG" alt=""></i>
+							                                                        <div class="user-image">
+							                               </div>
+							                            <div class="team-info">
+							                                <h3 class="user-name">Abhishek Narayan Gupta</h3>
+							                                <span>Web Developer</span>
+							                            </div>
+							                        </div>
+							                    </div>
+							                </div>
+							                <!-- ***** Testimonials Item End ***** -->
+							                
+							                <!-- ***** Testimonials Item Start ***** -->
+							                <div class="col-lg-4 col-md-6 col-sm-12">
+							                    <div class="team-item">
+							                        <div class="team-content">
+							                            <i><img src="img/faiz.jpg" alt=""></i>
+							                            
+							                            <div class="user-image">
+							                               
+							                            </div>
+							                            <div class="team-info">
+							                                <h3 class="user-name">Mohd Faiz</h3>
+							                                <span>Logo Designer</span>
+							                            </div>
+							                        </div>
+							                    </div>
+							                </div>
+							                <!-- ***** Testimonials Item End ***** -->
+
+								
+
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__item">
+                                    <div class="product">
+                                        <div class="tm-nav-link">
+                                            <i class="fas fa-handshake fa-3x tm-nav-icon"></i>
+                                            <span class="tm-nav-text">Our Work</span>
+                                            <div class="product__bg"></div>             
+                                        </div>                                                                 
+                                        <div class="product__description">
+                                            <div class="p-sm-4 p-2">
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                        <h2 class="tm-page-title">Our Work</h2>        
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                        <p>We Drive traffic to your website and improve your ranking in organic search results.</p>
+                                                        <p>We Make your business come to life online with a website that takes just minutes to create.</p>
+                                                        <p>We Provide searching customers with the right information and increase your visibility.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="p-sm-4 p-2 tm-img-container">
+                                                            <div class="tm-img-slider" id="tmImgSlider">
+                                                              <a href="#" class="tm-slider-img-link"><img src="img/images.jpg" alt="Image 1" class="img-fluid tm-slider-img"></a>
+                                                              <a href="#" class="tm-slider-img-link"><img src="img/1598607915-blog-whatwouldyouchoose.png" alt="Image 2" class="img-fluid tm-slider-img"></a>
+                                                              <a href="#" class="tm-slider-img-link"><img src="img/1598607044-blog-jabjab.png" alt="Image 3" class="img-fluid tm-slider-img"></a>
+                                                              <a href="#" class="tm-slider-img-link"><img src="img/1596615743-blog-what-are-google-ads.png" alt="Image 4" class="img-fluid tm-slider-img"></a>
+                                                              <a href="#" class="tm-slider-img-link"><img src="img/Future-of-Digital-Marketing-in-India-680x365_c.jpg" alt="Image 5" class="img-fluid tm-slider-img"></a>
+                                                              <a href="#" class="tm-slider-img-link"><img src="img/download21.jpg" alt="Image 6" class="img-fluid tm-slider-img"></a>
+                                                            </div>
+                                                        </div>  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>       
+                                    </div>
+                                </div>
+
+                                <div class="grid__item">
+                                    <div class="product">
+                                        <div class="tm-nav-link">
+                                            <i class="fas fa-comments fa-3x tm-nav-icon"></i>
+                                            <span class="tm-nav-text">Contact</span>
+                                            <div class="product__bg"></div>             
+                                        </div>                                                              
+                                        <div class="product__description">
+                                            <div class="pt-sm-4 pb-sm-4 pl-sm-5 pr-sm-5 pt-2 pb-2 pl-3 pr-3">
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                        <h2 class="tm-page-title">Contact Us</h2>        
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-12">
+                                                        <p>Get In Touch With Us, If You Want To Build Your Bussines Online </p>
+                                                        <p>And Increase Your Earning's </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        
+                                                            <button type="submit" class="btn btn-primary tm-btn-submit"> <a href="https://forms.gle/MgpYVz7kjggLMtDaA" style="color:black"> Regiter Now</a></button>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>                       
+                    </div>
+                </div>                
+            </div>
+            <footer>
+                <p class="small tm-copyright-text">Copyright &copy; <span class="tm-current-year">2020</span> Exponential DIGI. 
+                
+                Design: <a rel="nofollow"  class="tm-text-highlight">Abhishek</a></p>
+            </footer>
+        </div> <!-- .tm-main-content -->  
+    </div>
+    <!-- load JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>         <!-- https://jquery.com/ -->    
+    <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->  
+    <script src="js/anime.min.js"></script>                     <!-- http://animejs.com/ -->
+    <script src="js/main.js"></script>  
+    <script>      
+
+        function setupFooter() {
+            var pageHeight = $('.tm-site-header-container').height() + $('footer').height() + 100;
+
+            var main = $('.tm-main-content');
+
+            if($(window).height() < pageHeight) {
+                main.addClass('tm-footer-relative');
+            }
+            else {
+                main.removeClass('tm-footer-relative');   
+            }
+        }
+
+        /* DOM is ready
+        ------------------------------------------------*/
+        $(function(){
+
+            setupFooter();
+
+            $(window).resize(function(){
+                setupFooter();
+            });
+
+            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
+        });
+
+    </script>             
+
+</body>
+</html>
